@@ -1,6 +1,7 @@
 "use strict";
 (function() {
-	var socket = io('192.168.254.167:8080');
+	// Change "localhost" to reflect the network device's IP on the beaglebone.
+	var socket = io('localhost:8080');
 
 	socket.on('disconnect', function() {
       		$('#content').html('');
